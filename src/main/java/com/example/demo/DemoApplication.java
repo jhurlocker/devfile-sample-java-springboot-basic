@@ -12,6 +12,7 @@ public class DemoApplication {
 
     @RequestMapping("/")
     String home() {
+        System.out.println("==== ENV VAR ==== " + System.getProperty("VAR_FLAG"));
         return "Hello World!";
     }
 
